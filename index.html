@@ -1,0 +1,3300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=2"
+    />
+    <link href="index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-img-left">
+          <img class="company-img" />
+          <img class="ssl-img" />
+        </div>
+        <div class="header-img-right">
+          <img src="images/ph-flag.png" style="height: 56px; width: 56px" />
+          <img src="images/contact-us.jpeg" style="height: 56px" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="product-section">
+        <div class="container">
+          <div class="gallery-wrapper">
+            <div class="image-gallery gallery">
+              <div class="image-gallery-content">
+                <div class="slide-controls">
+                  <button
+                    type="button"
+                    class="image-gallery-icon slide-left-nav"
+                    onclick="swiper('left')"
+                  >
+                    <svg
+                      class="image-gallery-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="6 0 12 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    class="image-gallery-icon slide-right-nav"
+                    onclick="swiper('right')"
+                  >
+                    <svg
+                      class="image-gallery-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="6 0 12 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                  <div class="gallery-swipe">
+                    <div class="gallery-slides">
+                      <img
+                        class="gallery-display"
+                        src="https://d3hlrrbqydii6y.cloudfront.net/img/dc1f0f96644384b0ddeac69195499ca1.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-img-thumbnails-wrapper">
+                  <div class="gallery-thumbnails">
+                    <div class="gallery-img-thumbnails-container"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-description">
+            <h1>
+              Americans are Using this Pillow to Get a Comfortable Nights Rest
+              and Wake Up Feeling Great
+            </h1>
+            <ul class="description-list">
+              <li>
+                <div class="list-img"></div>
+                <div class="list-description">
+                  Suteras™ Orthopedic Contour Pillow Perfectly Molds to Your
+                  Necks Natural Shape for a Comfortable Nights Rest
+                </div>
+              </li>
+              <li>
+                <div class="list-img"></div>
+                <div class="list-description">
+                  Memory Foam Technology Makes Sure Sutera™ doesn't go "Flat"
+                  and Leave Your Neck Unsupported
+                </div>
+              </li>
+              <li>
+                <div class="list-img"></div>
+                <div class="list-description">
+                  Can Help Reduce Pressure & Tension on Your Neck
+                </div>
+              </li>
+              <li>
+                <div class="list-img"></div>
+                <div class="list-description">
+                  Works for all Back, Side & Stomach Sleepers!
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="ordering-section">
+        <form action="submit.html" method="GET">
+          <div class="container">
+            <div class="step-container" id="step1">
+              <div class="ordering-header-container">
+                <div class="ordering-header">
+                  <div class="discount-logo">
+                    <div class="rotating-border"></div>
+                    <div class="discount-detail">55 % OFF</div>
+                  </div>
+                  <div class="discount-description">
+                    <div>
+                      <h3>
+                        <p>Your 55% Discount Has Been Applied</p>
+                      </h3>
+                      <h4>
+                        <p>
+                          Your Order Qualifies For
+                          <strong>FREE SHIPPING</strong> When Ordered TODAY.
+                        </p>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="step1-header">
+                    <h2>STEP 1: SELECT ORDER QUANTITY</h2>
+                    <div class="line-break"></div>
+                  </div>
+                  <div class="order-option-list"></div>
+                </div>
+              </div>
+            </div>
+            <div id="payment-panel">
+              <div class="step-container">
+                <div>
+                  <h2 class="step-header">STEP 2: PAYMENT METHOD</h2>
+                  <div class="line-break"></div>
+                </div>
+                <div>
+                  <div id="choose-paypal" class="payment-option">
+                    <input
+                      id="paypal-btn"
+                      class="radio-custom"
+                      name="payment-option"
+                      type="radio"
+                    />
+                    <label
+                      for="paypal-btn"
+                      class="radio-custom-label option-label"
+                    >
+                      <img
+                        class="paypal-img"
+                        src="https://d3hlrrbqydii6y.cloudfront.net/img/2ac5a4cd0328e0a41695b02464afa541.png"
+                    /></label>
+                  </div>
+                  <div id="choose-cc" class="payment-option">
+                    <input
+                      id="cc-btn"
+                      class="radio-custom"
+                      name="payment-option"
+                      type="radio"
+                    />
+                    <label for="cc-btn" class="radio-custom-label option-label">
+                      <span class="cc-text">Credit Card</span>
+                    </label>
+                    <div><img src="images/credit-cards.jpg" /></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="step-3" class="step-container">
+                <div>
+                  <h2 class="step-header">STEP 3: CONTACT INFORMATION</h2>
+                  <div class="line-break"></div>
+                </div>
+                <div>
+                  <div class="d-flex">
+                    <div class="flex-1">
+                      <div>
+                        <input
+                          class="input-field required"
+                          type="text"
+                          name="firstName"
+                          placeholder="First Name"
+                          data-valid="false"
+                          data-value=""
+                          spellcheck="false"
+                          value=""
+                        />
+                      </div>
+                      <div class="input-error">This Field Is Required</div>
+                    </div>
+                    <div class="flex-1">
+                      <div>
+                        <input
+                          class="input-field required"
+                          type="text"
+                          name="lastName"
+                          placeholder="Last Name"
+                          data-valid="false"
+                          data-value=""
+                          spellcheck="false"
+                          value=""
+                        />
+                      </div>
+                      <div class="input-error">This Field Is Required</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <input
+                      class="input-field required"
+                      type="text"
+                      name="emailAddress"
+                      placeholder="E-mail"
+                      data-valid="false"
+                      data-value=""
+                      spellcheck="false"
+                      value=""
+                    />
+                  </div>
+                  <div class="input-error">This Field Is Required</div>
+                </div>
+                <div>
+                  <div style="position: relative">
+                    <div class="country-list">
+                      <div class="drop-arrow">
+                        <svg
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 32 32"
+                        >
+                          <path
+                            d="M31.92,5.021l-14.584,22.5c-0.089,0.139-0.241,0.223-0.406,0.229c-0.004,0-0.009,0-0.014,0 c-0.16,0-0.311-0.076-0.404-0.205L0.096,5.044C-0.015,4.893-0.031,4.69,0.054,4.523S0.312,4.25,0.5,4.25h31 c0.183,0,0.352,0.101,0.438,0.261C32.025,4.67,32.019,4.868,31.92,5.021z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="country-flag"></div>
+                      <div class="number-prefix">+93</div>
+                    </div>
+                    <input
+                      class="input-field required"
+                      type="tel"
+                      name="phoneNumber"
+                      placeholder="Phone"
+                      data-valid="true"
+                      data-value=""
+                      spellcheck="false"
+                      value=""
+                      style="text-indent: 68px"
+                      data-pos="-1"
+                    />
+                    <div class="countries" hidden>
+                      <div class="country">
+                        <div class="country-li-flag AF_25px"></div>
+                        <div class="country-li-name">Afghanistan</div>
+                        <div class="country-li-numfix">+93</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AL_25px"></div>
+                        <div class="country-li-name">Albania</div>
+                        <div class="country-li-numfix">+355</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag DZ_25px"></div>
+                        <div class="country-li-name">Algeria</div>
+                        <div class="country-li-numfix">+213</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AS_25px"></div>
+                        <div class="country-li-name">American Samoa</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AD_25px"></div>
+                        <div class="country-li-name">Andorra</div>
+                        <div class="country-li-numfix">+376</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AO_25px"></div>
+                        <div class="country-li-name">Angola</div>
+                        <div class="country-li-numfix">+244</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AI_25px"></div>
+                        <div class="country-li-name">Anguilla</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AQ_25px"></div>
+                        <div class="country-li-name">Antarctica</div>
+                        <div class="country-li-numfix">+0</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AG_25px"></div>
+                        <div class="country-li-name">Antigua and Barbuda</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AR_25px"></div>
+                        <div class="country-li-name">Argentina</div>
+                        <div class="country-li-numfix">+54</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AM_25px"></div>
+                        <div class="country-li-name">Armenia</div>
+                        <div class="country-li-numfix">+374</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AW_25px"></div>
+                        <div class="country-li-name">Aruba</div>
+                        <div class="country-li-numfix">+297</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AU_25px"></div>
+                        <div class="country-li-name">Australia</div>
+                        <div class="country-li-numfix">+61</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AT_25px"></div>
+                        <div class="country-li-name">Austria</div>
+                        <div class="country-li-numfix">+43</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AZ_25px"></div>
+                        <div class="country-li-name">Azerbaijan</div>
+                        <div class="country-li-numfix">+994</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BS_25px"></div>
+                        <div class="country-li-name">Bahamas</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BH_25px"></div>
+                        <div class="country-li-name">Bahrain</div>
+                        <div class="country-li-numfix">+973</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BD_25px"></div>
+                        <div class="country-li-name">Bangladesh</div>
+                        <div class="country-li-numfix">+880</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BB_25px"></div>
+                        <div class="country-li-name">Barbados</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BY_25px"></div>
+                        <div class="country-li-name">Belarus</div>
+                        <div class="country-li-numfix">+375</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BE_25px"></div>
+                        <div class="country-li-name">Belgium</div>
+                        <div class="country-li-numfix">+32</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BZ_25px"></div>
+                        <div class="country-li-name">Belize</div>
+                        <div class="country-li-numfix">+501</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BJ_25px"></div>
+                        <div class="country-li-name">Benin</div>
+                        <div class="country-li-numfix">+229</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BM_25px"></div>
+                        <div class="country-li-name">Bermuda</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BT_25px"></div>
+                        <div class="country-li-name">Bhutan</div>
+                        <div class="country-li-numfix">+975</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BO_25px"></div>
+                        <div class="country-li-name">Bolivia</div>
+                        <div class="country-li-numfix">+591</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BQ_25px"></div>
+                        <div class="country-li-name">
+                          Bonaire, Sint Eustatius and Saba
+                        </div>
+                        <div class="country-li-numfix">+599</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BA_25px"></div>
+                        <div class="country-li-name">
+                          Bosnia and Herzegovina
+                        </div>
+                        <div class="country-li-numfix">+387</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BW_25px"></div>
+                        <div class="country-li-name">Botswana</div>
+                        <div class="country-li-numfix">+267</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BV_25px"></div>
+                        <div class="country-li-name">Bouvet Island</div>
+                        <div class="country-li-numfix">+0</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BR_25px"></div>
+                        <div class="country-li-name">Brazil</div>
+                        <div class="country-li-numfix">+55</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag IO_25px"></div>
+                        <div class="country-li-name">
+                          British Indian Ocean Territory
+                        </div>
+                        <div class="country-li-numfix">+246</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BN_25px"></div>
+                        <div class="country-li-name">Brunei Darussalam</div>
+                        <div class="country-li-numfix">+673</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BG_25px"></div>
+                        <div class="country-li-name">Bulgaria</div>
+                        <div class="country-li-numfix">+359</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BF_25px"></div>
+                        <div class="country-li-name">Burkina Faso</div>
+                        <div class="country-li-numfix">+226</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BI_25px"></div>
+                        <div class="country-li-name">Burundi</div>
+                        <div class="country-li-numfix">+257</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KH_25px"></div>
+                        <div class="country-li-name">Cambodia</div>
+                        <div class="country-li-numfix">+855</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CM_25px"></div>
+                        <div class="country-li-name">Cameroon</div>
+                        <div class="country-li-numfix">+237</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CA_25px"></div>
+                        <div class="country-li-name">Canada</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CV_25px"></div>
+                        <div class="country-li-name">Cape Verde</div>
+                        <div class="country-li-numfix">+238</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KY_25px"></div>
+                        <div class="country-li-name">Cayman Islands</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CF_25px"></div>
+                        <div class="country-li-name">
+                          Central African Republic
+                        </div>
+                        <div class="country-li-numfix">+236</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TD_25px"></div>
+                        <div class="country-li-name">Chad</div>
+                        <div class="country-li-numfix">+235</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CL_25px"></div>
+                        <div class="country-li-name">Chile</div>
+                        <div class="country-li-numfix">+56</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CN_25px"></div>
+                        <div class="country-li-name">China</div>
+                        <div class="country-li-numfix">+86</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CX_25px"></div>
+                        <div class="country-li-name">Christmas Island</div>
+                        <div class="country-li-numfix">+61</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CC_25px"></div>
+                        <div class="country-li-name">
+                          Cocos (Keeling) Islands
+                        </div>
+                        <div class="country-li-numfix">+61</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CO_25px"></div>
+                        <div class="country-li-name">Colombia</div>
+                        <div class="country-li-numfix">+57</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KM_25px"></div>
+                        <div class="country-li-name">Comoros</div>
+                        <div class="country-li-numfix">+269</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CG_25px"></div>
+                        <div class="country-li-name">
+                          Congo, Republic of the (Brazzaville)
+                        </div>
+                        <div class="country-li-numfix">+242</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CD_25px"></div>
+                        <div class="country-li-name">
+                          Congo, the Democratic Republic of the (Kinshasa)
+                        </div>
+                        <div class="country-li-numfix">+243</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CK_25px"></div>
+                        <div class="country-li-name">Cook Islands</div>
+                        <div class="country-li-numfix">+682</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CR_25px"></div>
+                        <div class="country-li-name">Costa Rica</div>
+                        <div class="country-li-numfix">+506</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag HR_25px"></div>
+                        <div class="country-li-name">Croatia</div>
+                        <div class="country-li-numfix">+385</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CU_25px"></div>
+                        <div class="country-li-name">Cuba</div>
+                        <div class="country-li-numfix">+53</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CW_25px"></div>
+                        <div class="country-li-name">Curaçao</div>
+                        <div class="country-li-numfix">+599</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CY_25px"></div>
+                        <div class="country-li-name">Cyprus</div>
+                        <div class="country-li-numfix">+357</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CZ_25px"></div>
+                        <div class="country-li-name">Czech Republic</div>
+                        <div class="country-li-numfix">+420</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CI_25px"></div>
+                        <div class="country-li-name">
+                          Côte d'Ivoire, Republic of
+                        </div>
+                        <div class="country-li-numfix">+225</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag DK_25px"></div>
+                        <div class="country-li-name">Denmark</div>
+                        <div class="country-li-numfix">+45</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag DJ_25px"></div>
+                        <div class="country-li-name">Djibouti</div>
+                        <div class="country-li-numfix">+253</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag DM_25px"></div>
+                        <div class="country-li-name">Dominica</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag DO_25px"></div>
+                        <div class="country-li-name">Dominican Republic</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag EC_25px"></div>
+                        <div class="country-li-name">Ecuador</div>
+                        <div class="country-li-numfix">+593</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag EG_25px"></div>
+                        <div class="country-li-name">Egypt</div>
+                        <div class="country-li-numfix">+20</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SV_25px"></div>
+                        <div class="country-li-name">El Salvador</div>
+                        <div class="country-li-numfix">+503</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GQ_25px"></div>
+                        <div class="country-li-name">Equatorial Guinea</div>
+                        <div class="country-li-numfix">+240</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag ER_25px"></div>
+                        <div class="country-li-name">Eritrea</div>
+                        <div class="country-li-numfix">+291</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag EE_25px"></div>
+                        <div class="country-li-name">Estonia</div>
+                        <div class="country-li-numfix">+372</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag ET_25px"></div>
+                        <div class="country-li-name">Ethiopia</div>
+                        <div class="country-li-numfix">+251</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag FK_25px"></div>
+                        <div class="country-li-name">
+                          Falkland Islands (Islas Malvinas)
+                        </div>
+                        <div class="country-li-numfix">+500</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag FO_25px"></div>
+                        <div class="country-li-name">Faroe Islands</div>
+                        <div class="country-li-numfix">+298</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag FJ_25px"></div>
+                        <div class="country-li-name">Fiji</div>
+                        <div class="country-li-numfix">+679</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag FI_25px"></div>
+                        <div class="country-li-name">Finland</div>
+                        <div class="country-li-numfix">+358</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag FR_25px"></div>
+                        <div class="country-li-name">France</div>
+                        <div class="country-li-numfix">+33</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GF_25px"></div>
+                        <div class="country-li-name">French Guiana</div>
+                        <div class="country-li-numfix">+594</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PF_25px"></div>
+                        <div class="country-li-name">French Polynesia</div>
+                        <div class="country-li-numfix">+689</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TF_25px"></div>
+                        <div class="country-li-name">
+                          French Southern and Antarctic Lands
+                        </div>
+                        <div class="country-li-numfix">+0</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GA_25px"></div>
+                        <div class="country-li-name">Gabon</div>
+                        <div class="country-li-numfix">+241</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GM_25px"></div>
+                        <div class="country-li-name">Gambia, The</div>
+                        <div class="country-li-numfix">+220</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GE_25px"></div>
+                        <div class="country-li-name">Georgia</div>
+                        <div class="country-li-numfix">+995</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag DE_25px"></div>
+                        <div class="country-li-name">Germany</div>
+                        <div class="country-li-numfix">+49</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GH_25px"></div>
+                        <div class="country-li-name">Ghana</div>
+                        <div class="country-li-numfix">+233</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GI_25px"></div>
+                        <div class="country-li-name">Gibraltar</div>
+                        <div class="country-li-numfix">+350</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GR_25px"></div>
+                        <div class="country-li-name">Greece</div>
+                        <div class="country-li-numfix">+30</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GL_25px"></div>
+                        <div class="country-li-name">Greenland</div>
+                        <div class="country-li-numfix">+299</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GD_25px"></div>
+                        <div class="country-li-name">Grenada</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GP_25px"></div>
+                        <div class="country-li-name">Guadeloupe</div>
+                        <div class="country-li-numfix">+590</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GU_25px"></div>
+                        <div class="country-li-name">Guam</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GT_25px"></div>
+                        <div class="country-li-name">Guatemala</div>
+                        <div class="country-li-numfix">+502</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GG_25px"></div>
+                        <div class="country-li-name">Guernsey</div>
+                        <div class="country-li-numfix">+44</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GN_25px"></div>
+                        <div class="country-li-name">Guinea</div>
+                        <div class="country-li-numfix">+224</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GW_25px"></div>
+                        <div class="country-li-name">Guinea-Bissau</div>
+                        <div class="country-li-numfix">+245</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GY_25px"></div>
+                        <div class="country-li-name">Guyana</div>
+                        <div class="country-li-numfix">+592</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag HT_25px"></div>
+                        <div class="country-li-name">Haiti</div>
+                        <div class="country-li-numfix">+509</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag HM_25px"></div>
+                        <div class="country-li-name">
+                          Heard Island and McDonald Islands
+                        </div>
+                        <div class="country-li-numfix">+0</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag VA_25px"></div>
+                        <div class="country-li-name">
+                          Holy See (Vatican City)
+                        </div>
+                        <div class="country-li-numfix">+39</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag HN_25px"></div>
+                        <div class="country-li-name">Honduras</div>
+                        <div class="country-li-numfix">+504</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag HK_25px"></div>
+                        <div class="country-li-name">Hong Kong</div>
+                        <div class="country-li-numfix">+852</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag HU_25px"></div>
+                        <div class="country-li-name">Hungary</div>
+                        <div class="country-li-numfix">+36</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag IS_25px"></div>
+                        <div class="country-li-name">Iceland</div>
+                        <div class="country-li-numfix">+354</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag IN_25px"></div>
+                        <div class="country-li-name">India</div>
+                        <div class="country-li-numfix">+91</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag ID_25px"></div>
+                        <div class="country-li-name">Indonesia</div>
+                        <div class="country-li-numfix">+62</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag IR_25px"></div>
+                        <div class="country-li-name">
+                          Iran, Islamic Republic of
+                        </div>
+                        <div class="country-li-numfix">+98</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag IQ_25px"></div>
+                        <div class="country-li-name">Iraq</div>
+                        <div class="country-li-numfix">+964</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag IE_25px"></div>
+                        <div class="country-li-name">Ireland</div>
+                        <div class="country-li-numfix">+353</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag IM_25px"></div>
+                        <div class="country-li-name">Isle of Man</div>
+                        <div class="country-li-numfix">+44</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag IL_25px"></div>
+                        <div class="country-li-name">Israel</div>
+                        <div class="country-li-numfix">+972</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag IT_25px"></div>
+                        <div class="country-li-name">Italy</div>
+                        <div class="country-li-numfix">+39</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag JM_25px"></div>
+                        <div class="country-li-name">Jamaica</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag JP_25px"></div>
+                        <div class="country-li-name">Japan</div>
+                        <div class="country-li-numfix">+81</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag JE_25px"></div>
+                        <div class="country-li-name">Jersey</div>
+                        <div class="country-li-numfix">+44</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag JO_25px"></div>
+                        <div class="country-li-name">Jordan</div>
+                        <div class="country-li-numfix">+962</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KZ_25px"></div>
+                        <div class="country-li-name">Kazakhstan</div>
+                        <div class="country-li-numfix">+7</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KE_25px"></div>
+                        <div class="country-li-name">Kenya</div>
+                        <div class="country-li-numfix">+254</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KI_25px"></div>
+                        <div class="country-li-name">Kiribati</div>
+                        <div class="country-li-numfix">+686</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KP_25px"></div>
+                        <div class="country-li-name">
+                          Korea, Democratic People's Republic of
+                        </div>
+                        <div class="country-li-numfix">+850</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KR_25px"></div>
+                        <div class="country-li-name">Korea, Republic of</div>
+                        <div class="country-li-numfix">+82</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KW_25px"></div>
+                        <div class="country-li-name">Kuwait</div>
+                        <div class="country-li-numfix">+965</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KG_25px"></div>
+                        <div class="country-li-name">Kyrgyzstan</div>
+                        <div class="country-li-numfix">+996</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LA_25px"></div>
+                        <div class="country-li-name">Laos</div>
+                        <div class="country-li-numfix">+856</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LV_25px"></div>
+                        <div class="country-li-name">Latvia</div>
+                        <div class="country-li-numfix">+371</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LB_25px"></div>
+                        <div class="country-li-name">Lebanon</div>
+                        <div class="country-li-numfix">+961</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LS_25px"></div>
+                        <div class="country-li-name">Lesotho</div>
+                        <div class="country-li-numfix">+266</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LR_25px"></div>
+                        <div class="country-li-name">Liberia</div>
+                        <div class="country-li-numfix">+231</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LY_25px"></div>
+                        <div class="country-li-name">Libya</div>
+                        <div class="country-li-numfix">+218</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LI_25px"></div>
+                        <div class="country-li-name">Liechtenstein</div>
+                        <div class="country-li-numfix">+423</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LT_25px"></div>
+                        <div class="country-li-name">Lithuania</div>
+                        <div class="country-li-numfix">+370</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LU_25px"></div>
+                        <div class="country-li-name">Luxembourg</div>
+                        <div class="country-li-numfix">+352</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MO_25px"></div>
+                        <div class="country-li-name">Macao</div>
+                        <div class="country-li-numfix">+853</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MK_25px"></div>
+                        <div class="country-li-name">
+                          Macedonia, Republic of
+                        </div>
+                        <div class="country-li-numfix">+389</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MG_25px"></div>
+                        <div class="country-li-name">Madagascar</div>
+                        <div class="country-li-numfix">+261</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MW_25px"></div>
+                        <div class="country-li-name">Malawi</div>
+                        <div class="country-li-numfix">+265</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MY_25px"></div>
+                        <div class="country-li-name">Malaysia</div>
+                        <div class="country-li-numfix">+60</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MV_25px"></div>
+                        <div class="country-li-name">Maldives</div>
+                        <div class="country-li-numfix">+960</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag ML_25px"></div>
+                        <div class="country-li-name">Mali</div>
+                        <div class="country-li-numfix">+223</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MT_25px"></div>
+                        <div class="country-li-name">Malta</div>
+                        <div class="country-li-numfix">+356</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MH_25px"></div>
+                        <div class="country-li-name">Marshall Islands</div>
+                        <div class="country-li-numfix">+692</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MQ_25px"></div>
+                        <div class="country-li-name">Martinique</div>
+                        <div class="country-li-numfix">+596</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MR_25px"></div>
+                        <div class="country-li-name">Mauritania</div>
+                        <div class="country-li-numfix">+222</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MU_25px"></div>
+                        <div class="country-li-name">Mauritius</div>
+                        <div class="country-li-numfix">+230</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag YT_25px"></div>
+                        <div class="country-li-name">Mayotte</div>
+                        <div class="country-li-numfix">+262</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MX_25px"></div>
+                        <div class="country-li-name">Mexico</div>
+                        <div class="country-li-numfix">+52</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag FM_25px"></div>
+                        <div class="country-li-name">
+                          Micronesia, Federated States of
+                        </div>
+                        <div class="country-li-numfix">+691</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MD_25px"></div>
+                        <div class="country-li-name">Moldova</div>
+                        <div class="country-li-numfix">+373</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MC_25px"></div>
+                        <div class="country-li-name">Monaco</div>
+                        <div class="country-li-numfix">+377</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MN_25px"></div>
+                        <div class="country-li-name">Mongolia</div>
+                        <div class="country-li-numfix">+976</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag ME_25px"></div>
+                        <div class="country-li-name">Montenegro</div>
+                        <div class="country-li-numfix">+382</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MS_25px"></div>
+                        <div class="country-li-name">Montserrat</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MA_25px"></div>
+                        <div class="country-li-name">Morocco</div>
+                        <div class="country-li-numfix">+212</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MZ_25px"></div>
+                        <div class="country-li-name">Mozambique</div>
+                        <div class="country-li-numfix">+258</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MM_25px"></div>
+                        <div class="country-li-name">Myanmar</div>
+                        <div class="country-li-numfix">+95</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NA_25px"></div>
+                        <div class="country-li-name">Namibia</div>
+                        <div class="country-li-numfix">+264</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NR_25px"></div>
+                        <div class="country-li-name">Nauru</div>
+                        <div class="country-li-numfix">+674</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NP_25px"></div>
+                        <div class="country-li-name">Nepal</div>
+                        <div class="country-li-numfix">+977</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NL_25px"></div>
+                        <div class="country-li-name">Netherlands</div>
+                        <div class="country-li-numfix">+31</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NC_25px"></div>
+                        <div class="country-li-name">New Caledonia</div>
+                        <div class="country-li-numfix">+687</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NZ_25px"></div>
+                        <div class="country-li-name">New Zealand</div>
+                        <div class="country-li-numfix">+64</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NI_25px"></div>
+                        <div class="country-li-name">Nicaragua</div>
+                        <div class="country-li-numfix">+505</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NE_25px"></div>
+                        <div class="country-li-name">Niger</div>
+                        <div class="country-li-numfix">+227</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NG_25px"></div>
+                        <div class="country-li-name">Nigeria</div>
+                        <div class="country-li-numfix">+234</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NU_25px"></div>
+                        <div class="country-li-name">Niue</div>
+                        <div class="country-li-numfix">+683</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NF_25px"></div>
+                        <div class="country-li-name">Norfolk Island</div>
+                        <div class="country-li-numfix">+672</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MP_25px"></div>
+                        <div class="country-li-name">
+                          Northern Mariana Islands
+                        </div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag NO_25px"></div>
+                        <div class="country-li-name">Norway</div>
+                        <div class="country-li-numfix">+47</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag OM_25px"></div>
+                        <div class="country-li-name">Oman</div>
+                        <div class="country-li-numfix">+968</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PK_25px"></div>
+                        <div class="country-li-name">Pakistan</div>
+                        <div class="country-li-numfix">+92</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PW_25px"></div>
+                        <div class="country-li-name">Palau</div>
+                        <div class="country-li-numfix">+680</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PS_25px"></div>
+                        <div class="country-li-name">Palestine, State of</div>
+                        <div class="country-li-numfix">+970</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PA_25px"></div>
+                        <div class="country-li-name">Panama</div>
+                        <div class="country-li-numfix">+507</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PG_25px"></div>
+                        <div class="country-li-name">Papua New Guinea</div>
+                        <div class="country-li-numfix">+675</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PY_25px"></div>
+                        <div class="country-li-name">Paraguay</div>
+                        <div class="country-li-numfix">+595</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PE_25px"></div>
+                        <div class="country-li-name">Peru</div>
+                        <div class="country-li-numfix">+51</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PH_25px"></div>
+                        <div class="country-li-name">Philippines</div>
+                        <div class="country-li-numfix">+63</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PN_25px"></div>
+                        <div class="country-li-name">Pitcairn</div>
+                        <div class="country-li-numfix">+0</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PL_25px"></div>
+                        <div class="country-li-name">Poland</div>
+                        <div class="country-li-numfix">+48</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PT_25px"></div>
+                        <div class="country-li-name">Portugal</div>
+                        <div class="country-li-numfix">+351</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PR_25px"></div>
+                        <div class="country-li-name">Puerto Rico</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag QA_25px"></div>
+                        <div class="country-li-name">Qatar</div>
+                        <div class="country-li-numfix">+974</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag RO_25px"></div>
+                        <div class="country-li-name">Romania</div>
+                        <div class="country-li-numfix">+40</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag RU_25px"></div>
+                        <div class="country-li-name">Russian Federation</div>
+                        <div class="country-li-numfix">+7</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag RW_25px"></div>
+                        <div class="country-li-name">Rwanda</div>
+                        <div class="country-li-numfix">+250</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag RE_25px"></div>
+                        <div class="country-li-name">Réunion</div>
+                        <div class="country-li-numfix">+262</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag BL_25px"></div>
+                        <div class="country-li-name">Saint Barthélemy</div>
+                        <div class="country-li-numfix">+590</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SH_25px"></div>
+                        <div class="country-li-name">
+                          Saint Helena, Ascension and Tristan da Cunha
+                        </div>
+                        <div class="country-li-numfix">+290</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag KN_25px"></div>
+                        <div class="country-li-name">Saint Kitts and Nevis</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LC_25px"></div>
+                        <div class="country-li-name">Saint Lucia</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag MF_25px"></div>
+                        <div class="country-li-name">Saint Martin</div>
+                        <div class="country-li-numfix">+590</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag PM_25px"></div>
+                        <div class="country-li-name">
+                          Saint Pierre and Miquelon
+                        </div>
+                        <div class="country-li-numfix">+508</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag VC_25px"></div>
+                        <div class="country-li-name">
+                          Saint Vincent and the Grenadines
+                        </div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag WS_25px"></div>
+                        <div class="country-li-name">Samoa</div>
+                        <div class="country-li-numfix">+685</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SM_25px"></div>
+                        <div class="country-li-name">San Marino</div>
+                        <div class="country-li-numfix">+378</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag ST_25px"></div>
+                        <div class="country-li-name">Sao Tome and Principe</div>
+                        <div class="country-li-numfix">+239</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SA_25px"></div>
+                        <div class="country-li-name">Saudi Arabia</div>
+                        <div class="country-li-numfix">+966</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SN_25px"></div>
+                        <div class="country-li-name">Senegal</div>
+                        <div class="country-li-numfix">+221</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag RS_25px"></div>
+                        <div class="country-li-name">Serbia</div>
+                        <div class="country-li-numfix">+381</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SC_25px"></div>
+                        <div class="country-li-name">Seychelles</div>
+                        <div class="country-li-numfix">+248</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SL_25px"></div>
+                        <div class="country-li-name">Sierra Leone</div>
+                        <div class="country-li-numfix">+232</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SG_25px"></div>
+                        <div class="country-li-name">Singapore</div>
+                        <div class="country-li-numfix">+65</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SX_25px"></div>
+                        <div class="country-li-name">
+                          Sint Maarten (Dutch part)
+                        </div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SK_25px"></div>
+                        <div class="country-li-name">Slovakia</div>
+                        <div class="country-li-numfix">+421</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SI_25px"></div>
+                        <div class="country-li-name">Slovenia</div>
+                        <div class="country-li-numfix">+386</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SB_25px"></div>
+                        <div class="country-li-name">Solomon Islands</div>
+                        <div class="country-li-numfix">+677</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SO_25px"></div>
+                        <div class="country-li-name">Somalia</div>
+                        <div class="country-li-numfix">+252</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag ZA_25px"></div>
+                        <div class="country-li-name">South Africa</div>
+                        <div class="country-li-numfix">+27</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GS_25px"></div>
+                        <div class="country-li-name">
+                          South Georgia and South Sandwich Islands
+                        </div>
+                        <div class="country-li-numfix">+0</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SS_25px"></div>
+                        <div class="country-li-name">South Sudan</div>
+                        <div class="country-li-numfix">+211</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag ES_25px"></div>
+                        <div class="country-li-name">Spain</div>
+                        <div class="country-li-numfix">+34</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag LK_25px"></div>
+                        <div class="country-li-name">Sri Lanka</div>
+                        <div class="country-li-numfix">+94</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SD_25px"></div>
+                        <div class="country-li-name">Sudan</div>
+                        <div class="country-li-numfix">+249</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SR_25px"></div>
+                        <div class="country-li-name">Suriname</div>
+                        <div class="country-li-numfix">+597</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SZ_25px"></div>
+                        <div class="country-li-name">Swaziland</div>
+                        <div class="country-li-numfix">+268</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SE_25px"></div>
+                        <div class="country-li-name">Sweden</div>
+                        <div class="country-li-numfix">+46</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag CH_25px"></div>
+                        <div class="country-li-name">Switzerland</div>
+                        <div class="country-li-numfix">+41</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag SY_25px"></div>
+                        <div class="country-li-name">Syrian Arab Republic</div>
+                        <div class="country-li-numfix">+963</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TW_25px"></div>
+                        <div class="country-li-name">Taiwan</div>
+                        <div class="country-li-numfix">+886</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TJ_25px"></div>
+                        <div class="country-li-name">Tajikistan</div>
+                        <div class="country-li-numfix">+992</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TZ_25px"></div>
+                        <div class="country-li-name">
+                          Tanzania, United Republic of
+                        </div>
+                        <div class="country-li-numfix">+255</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TH_25px"></div>
+                        <div class="country-li-name">Thailand</div>
+                        <div class="country-li-numfix">+66</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TL_25px"></div>
+                        <div class="country-li-name">Timor-Leste</div>
+                        <div class="country-li-numfix">+670</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TG_25px"></div>
+                        <div class="country-li-name">Togo</div>
+                        <div class="country-li-numfix">+228</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TK_25px"></div>
+                        <div class="country-li-name">Tokelau</div>
+                        <div class="country-li-numfix">+690</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TO_25px"></div>
+                        <div class="country-li-name">Tonga</div>
+                        <div class="country-li-numfix">+676</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TT_25px"></div>
+                        <div class="country-li-name">Trinidad and Tobago</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TN_25px"></div>
+                        <div class="country-li-name">Tunisia</div>
+                        <div class="country-li-numfix">+216</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TR_25px"></div>
+                        <div class="country-li-name">Turkey</div>
+                        <div class="country-li-numfix">+90</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TM_25px"></div>
+                        <div class="country-li-name">Turkmenistan</div>
+                        <div class="country-li-numfix">+993</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TC_25px"></div>
+                        <div class="country-li-name">
+                          Turks and Caicos Islands
+                        </div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag TV_25px"></div>
+                        <div class="country-li-name">Tuvalu</div>
+                        <div class="country-li-numfix">+688</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag UG_25px"></div>
+                        <div class="country-li-name">Uganda</div>
+                        <div class="country-li-numfix">+256</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag UA_25px"></div>
+                        <div class="country-li-name">Ukraine</div>
+                        <div class="country-li-numfix">+380</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AE_25px"></div>
+                        <div class="country-li-name">United Arab Emirates</div>
+                        <div class="country-li-numfix">+971</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag GB_25px"></div>
+                        <div class="country-li-name">United Kingdom</div>
+                        <div class="country-li-numfix">+44</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag US_25px"></div>
+                        <div class="country-li-name">United States</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag UM_25px"></div>
+                        <div class="country-li-name">
+                          United States Minor Outlying Islands
+                        </div>
+                        <div class="country-li-numfix">+0</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag UY_25px"></div>
+                        <div class="country-li-name">Uruguay</div>
+                        <div class="country-li-numfix">+598</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag UZ_25px"></div>
+                        <div class="country-li-name">Uzbekistan</div>
+                        <div class="country-li-numfix">+998</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag VU_25px"></div>
+                        <div class="country-li-name">Vanuatu</div>
+                        <div class="country-li-numfix">+678</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag VE_25px"></div>
+                        <div class="country-li-name">
+                          Venezuela, Bolivarian Republic of
+                        </div>
+                        <div class="country-li-numfix">+58</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag VN_25px"></div>
+                        <div class="country-li-name">Vietnam</div>
+                        <div class="country-li-numfix">+84</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag VG_25px"></div>
+                        <div class="country-li-name">
+                          Virgin Islands, British
+                        </div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag VI_25px"></div>
+                        <div class="country-li-name">Virgin Islands, U.S.</div>
+                        <div class="country-li-numfix">+1</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag WF_25px"></div>
+                        <div class="country-li-name">Wallis and Futuna</div>
+                        <div class="country-li-numfix">+681</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag EH_25px"></div>
+                        <div class="country-li-name">Western Sahara</div>
+                        <div class="country-li-numfix">+212</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag YE_25px"></div>
+                        <div class="country-li-name">Yemen</div>
+                        <div class="country-li-numfix">+967</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag ZM_25px"></div>
+                        <div class="country-li-name">Zambia</div>
+                        <div class="country-li-numfix">+260</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag ZW_25px"></div>
+                        <div class="country-li-name">Zimbabwe</div>
+                        <div class="country-li-numfix">+263</div>
+                      </div>
+                      <div class="country">
+                        <div class="country-li-flag AX_25px"></div>
+                        <div class="country-li-name">Åland Islands</div>
+                        <div class="country-li-numfix">+358</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment-section">
+                    <div>
+                      <h2 class="step-header" style="text-align: center">
+                        What Customers say about Sutera™:
+                      </h2>
+                      <div class="line-break"></div>
+                    </div>
+                    <div class="comment-block">
+                      <div class="user-comment">
+                        <div class="user-comment-header">
+                          <div
+                            class="user-icon"
+                            style="background: rgb(3, 28, 60)"
+                          >
+                            <span class="user-initial">J</span>
+                            <div class="user-verified">
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 71.9 71.9"
+                                >
+                                  <path
+                                    d="M69.9 8.1c-2.1-1.3-5-.8-6.3 1.3L33.7 53.9 7 36.9c-2.1-1.4-5-.7-6.3 1.3-1.3 2.1-.7 4.9 1.4 6.2l30.5 19.4 1.1.5.6.2a4.8 4.8 0 0 0 1.7 0l.1-.1a4.6 4.6 0 0 0 2-1l.2-.3.2-.1.2-.3.1-.2 32.3-48.1c1.4-2.1.9-4.9-1.2-6.3z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="user-details">
+                            <p class="user">
+                              <span
+                                class="user-name"
+                                style="color: rgb(0, 0, 0)"
+                                >John D.</span
+                              >
+                              <span class="user-verified-status"
+                                >Verified Buyer</span
+                              >
+                            </p>
+                            <p class="user-rating" style="color: yellow">
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="comment-content">
+                          <p class="comment-title">Great Pillow</p>
+                          <div class="comment-body">
+                            <p>
+                              The best thing about this pillow is it seems to
+                              keep me from moving around trying to find the
+                              right position. Once your head and neck are in
+                              position your body just follows. The memory foam
+                              is a perfect firmness and doesn’t even get warm.
+                              No more punching the pillow or flipping it over.
+                              Great purchase.
+                            </p>
+                          </div>
+                          <div class="comment-date">10/19/22</div>
+                        </div>
+                      </div>
+                      <div class="user-comment">
+                        <div class="user-comment-header">
+                          <div
+                            class="user-icon"
+                            style="background: rgb(3, 28, 60)"
+                          >
+                            <span class="user-initial">K</span>
+                            <div class="user-verified">
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 71.9 71.9"
+                                >
+                                  <path
+                                    d="M69.9 8.1c-2.1-1.3-5-.8-6.3 1.3L33.7 53.9 7 36.9c-2.1-1.4-5-.7-6.3 1.3-1.3 2.1-.7 4.9 1.4 6.2l30.5 19.4 1.1.5.6.2a4.8 4.8 0 0 0 1.7 0l.1-.1a4.6 4.6 0 0 0 2-1l.2-.3.2-.1.2-.3.1-.2 32.3-48.1c1.4-2.1.9-4.9-1.2-6.3z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="user-details">
+                            <p class="user">
+                              <span
+                                class="user-name"
+                                style="color: rgb(0, 0, 0)"
+                                >Kurt P.</span
+                              >
+                              <span class="user-verified-status"
+                                >Verified Buyer</span
+                              >
+                            </p>
+                            <p class="user-rating" style="color: yellow">
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="comment-content">
+                          <p class="comment-title">Have used the pillow now</p>
+                          <div class="comment-body">
+                            <p>
+                              Have used the pillow now for a couple weeks, and
+                              love the way it supports my neck and spine. My
+                              neck,shoulder,and arm pain is gone now when I wake
+                              up. I purchased 3 pillows, and am going to give
+                              one of to my mother and the other to my brother.
+                              Your product seems to be working for me!!! Thanks
+                            </p>
+                          </div>
+                          <div class="comment-date">10/18/22</div>
+                        </div>
+                      </div>
+                      <div class="user-comment">
+                        <div class="user-comment-header">
+                          <div
+                            class="user-icon"
+                            style="background: rgb(3, 28, 60)"
+                          >
+                            <span class="user-initial">A</span>
+                            <div class="user-verified">
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 71.9 71.9"
+                                >
+                                  <path
+                                    d="M69.9 8.1c-2.1-1.3-5-.8-6.3 1.3L33.7 53.9 7 36.9c-2.1-1.4-5-.7-6.3 1.3-1.3 2.1-.7 4.9 1.4 6.2l30.5 19.4 1.1.5.6.2a4.8 4.8 0 0 0 1.7 0l.1-.1a4.6 4.6 0 0 0 2-1l.2-.3.2-.1.2-.3.1-.2 32.3-48.1c1.4-2.1.9-4.9-1.2-6.3z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="user-details">
+                            <p class="user">
+                              <span
+                                class="user-name"
+                                style="color: rgb(0, 0, 0)"
+                                >Anita M.</span
+                              >
+                              <span class="user-verified-status"
+                                >Verified Buyer</span
+                              >
+                            </p>
+                            <p class="user-rating" style="color: yellow">
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="isvg loaded"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 55.87 55.87"
+                                >
+                                  <path
+                                    d="M55.82 21.58a1 1 0 0 0-.81-.68l-18.09-2.63-8.09-16.4a1 1 0 0 0-1.8 0l-8.08 16.4L.85 20.9a1 1 0 0 0-.55 1.7l13.1 12.76-3.1 18.02a1 1 0 0 0 1.45 1.06l16.18-8.51 16.18 8.5a1 1 0 0 0 1.45-1.05l-3.09-18.02 13.1-12.76a1 1 0 0 0 .25-1.02z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="comment-content">
+                          <p class="comment-title">
+                            This pillow has improved my
+                          </p>
+                          <div class="comment-body">
+                            <p>
+                              This pillow has improved my sleep significantly!
+                              No more propping up my pillow with my hand to
+                              support my neck! Thank you!
+                            </p>
+                          </div>
+                          <div class="comment-date">10/13/22</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="step-4" class="step-container">
+                <div>
+                  <h2 class="step-header">STEP 4: SHIPPING ADDRESS</h2>
+                  <div class="line-break"></div>
+                </div>
+                <div>
+                  <div>
+                    <input
+                      class="input-field required"
+                      type="text"
+                      name="addressLine1"
+                      placeholder="Street Address"
+                      data-valid="false"
+                      data-value=""
+                      spellcheck="false"
+                      value=""
+                    />
+                  </div>
+                  <div class="input-error">This Field Is Required</div>
+                </div>
+                <div>
+                  <input
+                    class="input-field"
+                    type="text"
+                    name="addressLine2"
+                    placeholder="Apartment or Suite (Optional)"
+                    data-valid="false"
+                    data-value=""
+                    spellcheck="false"
+                    value=""
+                  />
+                </div>
+                <div>
+                  <div>
+                    <input
+                      class="input-field required"
+                      type="text"
+                      name="city"
+                      placeholder="City"
+                      data-valid="false"
+                      data-value=""
+                      spellcheck="false"
+                      value=""
+                    />
+                  </div>
+                  <div class="input-error">This Field Is Required</div>
+                </div>
+                <div>
+                  <div class="pos-rel">
+                    <select
+                      type="text"
+                      name="country"
+                      placeholder="Country"
+                      data-value="PH"
+                    >
+                      <option value="">Country</option>
+                      <option value="AF">Afghanistan</option>
+                      <option value="AL">Albania</option>
+                      <option value="DZ">Algeria</option>
+                      <option value="AS">American Samoa</option>
+                      <option value="AD">Andorra</option>
+                      <option value="AO">Angola</option>
+                      <option value="AI">Anguilla</option>
+                      <option value="AQ">Antarctica</option>
+                      <option value="AG">Antigua and Barbuda</option>
+                      <option value="AR">Argentina</option>
+                      <option value="AM">Armenia</option>
+                      <option value="AW">Aruba</option>
+                      <option value="AU">Australia</option>
+                      <option value="AT">Austria</option>
+                      <option value="AZ">Azerbaijan</option>
+                      <option value="BS">Bahamas</option>
+                      <option value="BH">Bahrain</option>
+                      <option value="BD">Bangladesh</option>
+                      <option value="BB">Barbados</option>
+                      <option value="BY">Belarus</option>
+                      <option value="BE">Belgium</option>
+                      <option value="BZ">Belize</option>
+                      <option value="BJ">Benin</option>
+                      <option value="BM">Bermuda</option>
+                      <option value="BT">Bhutan</option>
+                      <option value="BO">Bolivia</option>
+                      <option value="BQ">
+                        Bonaire, Sint Eustatius and Saba
+                      </option>
+                      <option value="BA">Bosnia and Herzegovina</option>
+                      <option value="BW">Botswana</option>
+                      <option value="BV">Bouvet Island</option>
+                      <option value="BR">Brazil</option>
+                      <option value="IO">British Indian Ocean Territory</option>
+                      <option value="BN">Brunei Darussalam</option>
+                      <option value="BG">Bulgaria</option>
+                      <option value="BF">Burkina Faso</option>
+                      <option value="BI">Burundi</option>
+                      <option value="KH">Cambodia</option>
+                      <option value="CM">Cameroon</option>
+                      <option value="CA">Canada</option>
+                      <option value="CV">Cape Verde</option>
+                      <option value="KY">Cayman Islands</option>
+                      <option value="CF">Central African Republic</option>
+                      <option value="TD">Chad</option>
+                      <option value="CL">Chile</option>
+                      <option value="CN">China</option>
+                      <option value="CX">Christmas Island</option>
+                      <option value="CC">Cocos (Keeling) Islands</option>
+                      <option value="CO">Colombia</option>
+                      <option value="KM">Comoros</option>
+                      <option value="CG">
+                        Congo, Republic of the (Brazzaville)
+                      </option>
+                      <option value="CD">
+                        Congo, the Democratic Republic of the (Kinshasa)
+                      </option>
+                      <option value="CK">Cook Islands</option>
+                      <option value="CR">Costa Rica</option>
+                      <option value="HR">Croatia</option>
+                      <option value="CU">Cuba</option>
+                      <option value="CW">Curaçao</option>
+                      <option value="CY">Cyprus</option>
+                      <option value="CZ">Czech Republic</option>
+                      <option value="CI">Côte d'Ivoire, Republic of</option>
+                      <option value="DK">Denmark</option>
+                      <option value="DJ">Djibouti</option>
+                      <option value="DM">Dominica</option>
+                      <option value="DO">Dominican Republic</option>
+                      <option value="EC">Ecuador</option>
+                      <option value="EG">Egypt</option>
+                      <option value="SV">El Salvador</option>
+                      <option value="GQ">Equatorial Guinea</option>
+                      <option value="ER">Eritrea</option>
+                      <option value="EE">Estonia</option>
+                      <option value="ET">Ethiopia</option>
+                      <option value="FK">
+                        Falkland Islands (Islas Malvinas)
+                      </option>
+                      <option value="FO">Faroe Islands</option>
+                      <option value="FJ">Fiji</option>
+                      <option value="FI">Finland</option>
+                      <option value="FR">France</option>
+                      <option value="GF">French Guiana</option>
+                      <option value="PF">French Polynesia</option>
+                      <option value="TF">
+                        French Southern and Antarctic Lands
+                      </option>
+                      <option value="GA">Gabon</option>
+                      <option value="GM">Gambia, The</option>
+                      <option value="GE">Georgia</option>
+                      <option value="DE">Germany</option>
+                      <option value="GH">Ghana</option>
+                      <option value="GI">Gibraltar</option>
+                      <option value="GR">Greece</option>
+                      <option value="GL">Greenland</option>
+                      <option value="GD">Grenada</option>
+                      <option value="GP">Guadeloupe</option>
+                      <option value="GU">Guam</option>
+                      <option value="GT">Guatemala</option>
+                      <option value="GG">Guernsey</option>
+                      <option value="GN">Guinea</option>
+                      <option value="GW">Guinea-Bissau</option>
+                      <option value="GY">Guyana</option>
+                      <option value="HT">Haiti</option>
+                      <option value="HM">
+                        Heard Island and McDonald Islands
+                      </option>
+                      <option value="VA">Holy See (Vatican City)</option>
+                      <option value="HN">Honduras</option>
+                      <option value="HK">Hong Kong</option>
+                      <option value="HU">Hungary</option>
+                      <option value="IS">Iceland</option>
+                      <option value="IN">India</option>
+                      <option value="ID">Indonesia</option>
+                      <option value="IR">Iran, Islamic Republic of</option>
+                      <option value="IQ">Iraq</option>
+                      <option value="IE">Ireland</option>
+                      <option value="IM">Isle of Man</option>
+                      <option value="IL">Israel</option>
+                      <option value="IT">Italy</option>
+                      <option value="JM">Jamaica</option>
+                      <option value="JP">Japan</option>
+                      <option value="JE">Jersey</option>
+                      <option value="JO">Jordan</option>
+                      <option value="KZ">Kazakhstan</option>
+                      <option value="KE">Kenya</option>
+                      <option value="KI">Kiribati</option>
+                      <option value="KP">
+                        Korea, Democratic People's Republic of
+                      </option>
+                      <option value="KR">Korea, Republic of</option>
+                      <option value="KW">Kuwait</option>
+                      <option value="KG">Kyrgyzstan</option>
+                      <option value="LA">Laos</option>
+                      <option value="LV">Latvia</option>
+                      <option value="LB">Lebanon</option>
+                      <option value="LS">Lesotho</option>
+                      <option value="LR">Liberia</option>
+                      <option value="LY">Libya</option>
+                      <option value="LI">Liechtenstein</option>
+                      <option value="LT">Lithuania</option>
+                      <option value="LU">Luxembourg</option>
+                      <option value="MO">Macao</option>
+                      <option value="MK">Macedonia, Republic of</option>
+                      <option value="MG">Madagascar</option>
+                      <option value="MW">Malawi</option>
+                      <option value="MY">Malaysia</option>
+                      <option value="MV">Maldives</option>
+                      <option value="ML">Mali</option>
+                      <option value="MT">Malta</option>
+                      <option value="MH">Marshall Islands</option>
+                      <option value="MQ">Martinique</option>
+                      <option value="MR">Mauritania</option>
+                      <option value="MU">Mauritius</option>
+                      <option value="YT">Mayotte</option>
+                      <option value="MX">Mexico</option>
+                      <option value="FM">
+                        Micronesia, Federated States of
+                      </option>
+                      <option value="MD">Moldova</option>
+                      <option value="MC">Monaco</option>
+                      <option value="MN">Mongolia</option>
+                      <option value="ME">Montenegro</option>
+                      <option value="MS">Montserrat</option>
+                      <option value="MA">Morocco</option>
+                      <option value="MZ">Mozambique</option>
+                      <option value="MM">Myanmar</option>
+                      <option value="NA">Namibia</option>
+                      <option value="NR">Nauru</option>
+                      <option value="NP">Nepal</option>
+                      <option value="NL">Netherlands</option>
+                      <option value="NC">New Caledonia</option>
+                      <option value="NZ">New Zealand</option>
+                      <option value="NI">Nicaragua</option>
+                      <option value="NE">Niger</option>
+                      <option value="NG">Nigeria</option>
+                      <option value="NU">Niue</option>
+                      <option value="NF">Norfolk Island</option>
+                      <option value="MP">Northern Mariana Islands</option>
+                      <option value="NO">Norway</option>
+                      <option value="OM">Oman</option>
+                      <option value="PK">Pakistan</option>
+                      <option value="PW">Palau</option>
+                      <option value="PS">Palestine, State of</option>
+                      <option value="PA">Panama</option>
+                      <option value="PG">Papua New Guinea</option>
+                      <option value="PY">Paraguay</option>
+                      <option value="PE">Peru</option>
+                      <option value="PH">Philippines</option>
+                      <option value="PN">Pitcairn</option>
+                      <option value="PL">Poland</option>
+                      <option value="PT">Portugal</option>
+                      <option value="PR">Puerto Rico</option>
+                      <option value="QA">Qatar</option>
+                      <option value="RO">Romania</option>
+                      <option value="RU">Russian Federation</option>
+                      <option value="RW">Rwanda</option>
+                      <option value="RE">Réunion</option>
+                      <option value="BL">Saint Barthélemy</option>
+                      <option value="SH">
+                        Saint Helena, Ascension and Tristan da Cunha
+                      </option>
+                      <option value="KN">Saint Kitts and Nevis</option>
+                      <option value="LC">Saint Lucia</option>
+                      <option value="MF">Saint Martin</option>
+                      <option value="PM">Saint Pierre and Miquelon</option>
+                      <option value="VC">
+                        Saint Vincent and the Grenadines
+                      </option>
+                      <option value="WS">Samoa</option>
+                      <option value="SM">San Marino</option>
+                      <option value="ST">Sao Tome and Principe</option>
+                      <option value="SA">Saudi Arabia</option>
+                      <option value="SN">Senegal</option>
+                      <option value="RS">Serbia</option>
+                      <option value="SC">Seychelles</option>
+                      <option value="SL">Sierra Leone</option>
+                      <option value="SG">Singapore</option>
+                      <option value="SX">Sint Maarten (Dutch part)</option>
+                      <option value="SK">Slovakia</option>
+                      <option value="SI">Slovenia</option>
+                      <option value="SB">Solomon Islands</option>
+                      <option value="SO">Somalia</option>
+                      <option value="ZA">South Africa</option>
+                      <option value="GS">
+                        South Georgia and South Sandwich Islands
+                      </option>
+                      <option value="SS">South Sudan</option>
+                      <option value="ES">Spain</option>
+                      <option value="LK">Sri Lanka</option>
+                      <option value="SD">Sudan</option>
+                      <option value="SR">Suriname</option>
+                      <option value="SZ">Swaziland</option>
+                      <option value="SE">Sweden</option>
+                      <option value="CH">Switzerland</option>
+                      <option value="SY">Syrian Arab Republic</option>
+                      <option value="TW">Taiwan</option>
+                      <option value="TJ">Tajikistan</option>
+                      <option value="TZ">Tanzania, United Republic of</option>
+                      <option value="TH">Thailand</option>
+                      <option value="TL">Timor-Leste</option>
+                      <option value="TG">Togo</option>
+                      <option value="TK">Tokelau</option>
+                      <option value="TO">Tonga</option>
+                      <option value="TT">Trinidad and Tobago</option>
+                      <option value="TN">Tunisia</option>
+                      <option value="TR">Turkey</option>
+                      <option value="TM">Turkmenistan</option>
+                      <option value="TC">Turks and Caicos Islands</option>
+                      <option value="TV">Tuvalu</option>
+                      <option value="UG">Uganda</option>
+                      <option value="UA">Ukraine</option>
+                      <option value="AE">United Arab Emirates</option>
+                      <option value="GB">United Kingdom</option>
+                      <option value="US">United States</option>
+                      <option value="UM">
+                        United States Minor Outlying Islands
+                      </option>
+                      <option value="UY">Uruguay</option>
+                      <option value="UZ">Uzbekistan</option>
+                      <option value="VU">Vanuatu</option>
+                      <option value="VE">
+                        Venezuela, Bolivarian Republic of
+                      </option>
+                      <option value="VN">Vietnam</option>
+                      <option value="VG">Virgin Islands, British</option>
+                      <option value="VI">Virgin Islands, U.S.</option>
+                      <option value="WF">Wallis and Futuna</option>
+                      <option value="EH">Western Sahara</option>
+                      <option value="YE">Yemen</option>
+                      <option value="ZM">Zambia</option>
+                      <option value="ZW">Zimbabwe</option>
+                      <option value="AX">Åland Islands</option>
+                    </select>
+                    <span class="isvg loaded"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 137.32 159.34"
+                      >
+                        <path
+                          d="M0 87.74h137.18c-.87 1.09-1.35 1.82-2 2.45Q104.15 123 73 155.84c-4.42 4.66-4.43 4.65-8.82 0L2.34 90.56C1.63 89.81 1 89 0 87.74zM137.32 72.1H.24a16.26 16.26 0 0 1 1.4-2.1Q34.27 35.51 66.88 1c1.64-1.74 2.47-1 3.73.3q27.71 29.34 55.46 58.6c3.09 3.26 6.19 6.53 9.26 9.8.55.58 1.02 1.22 1.99 2.4z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="flex-3 pos-rel">
+                    <select
+                      class="required"
+                      type="text"
+                      name="state"
+                      placeholder="State"
+                      data-value=""
+                    >
+                      <option value="">State</option>
+                      <option value="ABR">Abra</option>
+                      <option value="AGN">Agusan del Norte</option>
+                      <option value="AGS">Agusan del Sur</option>
+                      <option value="AKL">Aklan</option>
+                      <option value="ALB">Albay</option>
+                      <option value="ANT">Antique</option>
+                      <option value="APA">Apayao</option>
+                      <option value="AUR">Aurora</option>
+                      <option value="BAS">Basilan</option>
+                      <option value="BAN">Bataan</option>
+                      <option value="BTN">Batanes</option>
+                      <option value="BTG">Batangas</option>
+                      <option value="BEN">Benguet</option>
+                      <option value="BIL">Biliran</option>
+                      <option value="BOH">Bohol</option>
+                      <option value="BUK">Bukidnon</option>
+                      <option value="BUL">Bulacan</option>
+                      <option value="CAG">Cagayan</option>
+                      <option value="CAN">Camarines Norte</option>
+                      <option value="CAS">Camarines Sur</option>
+                      <option value="CAM">Camiguin</option>
+                      <option value="CAP">Capiz</option>
+                      <option value="CAT">Catanduanes</option>
+                      <option value="CAV">Cavite</option>
+                      <option value="CEB">Cebu</option>
+                      <option value="COM">Compostela</option>
+                      <option value="NCO">Cotabato</option>
+                      <option value="DVO">Davao Occidental</option>
+                      <option value="DAO">Davao Oriental</option>
+                      <option value="DAV">Davao del Norte</option>
+                      <option value="DAS">Davao del Sur</option>
+                      <option value="DIN">Dinagat Islands</option>
+                      <option value="EAS">Eastern Samar</option>
+                      <option value="GUI">Guimaras</option>
+                      <option value="IFU">Ifugao</option>
+                      <option value="ILN">Ilocos Norte</option>
+                      <option value="ILS">Ilocos Sur</option>
+                      <option value="ILI">Iloilo</option>
+                      <option value="ISA">Isabela</option>
+                      <option value="KAL">Kalinga</option>
+                      <option value="LUN">La Union</option>
+                      <option value="LAG">Laguna</option>
+                      <option value="LAN">Lanao del Norte</option>
+                      <option value="LAS">Lanao del Sur</option>
+                      <option value="LEY">Leyte</option>
+                      <option value="MAG">Maguindanao</option>
+                      <option value="MAS">Masbate</option>
+                      <option value="00">Metro Manila</option>
+                      <option value="MDC">Mindoro Occidental</option>
+                      <option value="MDR">Mindoro Oriental</option>
+                      <option value="MSC">Misamis Occidental</option>
+                      <option value="MSR">Misamis Oriental</option>
+                      <option value="MOU">Mountain Province</option>
+                      <option value="NEC">Negros Occidental</option>
+                      <option value="NER">Negros Oriental</option>
+                      <option value="NSA">Northern Samar</option>
+                      <option value="NUE">Nueva Ecija</option>
+                      <option value="NUV">Nueva Vizcaya</option>
+                      <option value="PLW">Palawan</option>
+                      <option value="PAM">Pampanga</option>
+                      <option value="PAN">Pangasinan</option>
+                      <option value="QUE">Quezon</option>
+                      <option value="QUI">Quirino</option>
+                      <option value="RIZ">Rizal</option>
+                      <option value="ROM">Romblon</option>
+                      <option value="WSA">Samar</option>
+                      <option value="SAR">Sarangani</option>
+                      <option value="SIG">Siquijor</option>
+                      <option value="SOR">Sorsogon</option>
+                      <option value="SLE">Southern Leyte</option>
+                      <option value="AUK">Sultan Kudarat</option>
+                      <option value="SLU">Sulu</option>
+                      <option value="SUN">Surigao del Norte</option>
+                      <option value="SUR">Surigao del Sur</option>
+                      <option value="TAR">Tarlac</option>
+                      <option value="TAW">Tawi-Tawi</option>
+                      <option value="ZMB">Zambales</option>
+                      <option value="ZSI">Zamboanga Sibugay</option>
+                      <option value="ZAN">Zamboanga del Norte</option>
+                      <option value="ZAS">Zamboanga del Sur</option>
+                    </select>
+                  </div>
+                  <div class="flex-2 pos-rel">
+                    <input
+                      class="input-field required"
+                      type="text"
+                      name="postalCode"
+                      placeholder="Zip Code"
+                      data-valid="false"
+                      data-value=""
+                      spellcheck="false"
+                      value=""
+                    />
+                    <div class="input-error">This Field Is Required</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="pos-rel">
+                    <input
+                      class="input-field required"
+                      type="tel"
+                      name="cardNumber"
+                      placeholder="Credit Card Number"
+                      data-valid="false"
+                      data-value=""
+                      spellcheck="false"
+                      value=""
+                    />
+                    <span class="isvg loaded"
+                      ><svg
+                        class="lock-svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 1C8.676 1 6 3.676 6 7v1c-1.093 0-2 .907-2 2v10c0 1.093.907 2 2 2h12c1.093 0 2-.907 2-2V10c0-1.093-.907-2-2-2V7c0-3.324-2.676-6-6-6zm0 2c2.276 0 4 1.724 4 4v1H8V7c0-2.276 1.724-4 4-4zm-6 7h12v10H6V10zm6 3c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <div class="input-error">
+                      Please Enter A Valid Credit Card Number
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <input
+                    class="input-field required"
+                    type="tel"
+                    name="cardSecurityCode"
+                    placeholder="Security Code (3-4 Digits)"
+                    data-valid="false"
+                    data-value=""
+                    spellcheck="false"
+                    value=""
+                  />
+                  <div class="input-error">
+                    Please Enter A Valid Security Code
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="flex-1 pos-rel">
+                    <select
+                      class="required"
+                      type="text"
+                      name="cardMonth"
+                      placeholder="Card Month"
+                      data-value="0"
+                    >
+                      <option value="0">Card Month</option>
+                      <option value="01">01 - January</option>
+                      <option value="02">02 - February</option>
+                      <option value="03">03 - March</option>
+                      <option value="04">04 - April</option>
+                      <option value="05">05 - May</option>
+                      <option value="06">06 - June</option>
+                      <option value="07">07 - July</option>
+                      <option value="08">08 - August</option>
+                      <option value="09">09 - September</option>
+                      <option value="10">10 - October</option>
+                      <option value="11">11 - November</option>
+                      <option value="12">12 - December</option>
+                    </select>
+                    <span class="isvg loaded"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 137.32 159.34"
+                      >
+                        <path
+                          d="M0 87.74h137.18c-.87 1.09-1.35 1.82-2 2.45Q104.15 123 73 155.84c-4.42 4.66-4.43 4.65-8.82 0L2.34 90.56C1.63 89.81 1 89 0 87.74zM137.32 72.1H.24a16.26 16.26 0 0 1 1.4-2.1Q34.27 35.51 66.88 1c1.64-1.74 2.47-1 3.73.3q27.71 29.34 55.46 58.6c3.09 3.26 6.19 6.53 9.26 9.8.55.58 1.02 1.22 1.99 2.4z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex-1 pos-rel">
+                    <select
+                      class="required"
+                      type="text"
+                      name="cardYear"
+                      placeholder="Card Year"
+                      data-value="0"
+                    >
+                      <option value="0">Card Year</option>
+                      <option value="23">2023</option>
+                      <option value="24">2024</option>
+                      <option value="25">2025</option>
+                      <option value="26">2026</option>
+                      <option value="27">2027</option>
+                      <option value="28">2028</option>
+                      <option value="29">2029</option>
+                      <option value="30">2030</option>
+                      <option value="31">2031</option>
+                      <option value="32">2032</option>
+                      <option value="33">2033</option>
+                      <option value="34">2034</option>
+                      <option value="35">2035</option>
+                      <option value="36">2036</option>
+                      <option value="37">2037</option>
+                    </select>
+                    <span class="isvg loaded"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 137.32 159.34"
+                      >
+                        <path
+                          d="M0 87.74h137.18c-.87 1.09-1.35 1.82-2 2.45Q104.15 123 73 155.84c-4.42 4.66-4.43 4.65-8.82 0L2.34 90.56C1.63 89.81 1 89 0 87.74zM137.32 72.1H.24a16.26 16.26 0 0 1 1.4-2.1Q34.27 35.51 66.88 1c1.64-1.74 2.47-1 3.73.3q27.71 29.34 55.46 58.6c3.09 3.26 6.19 6.53 9.26 9.8.55.58 1.02 1.22 1.99 2.4z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div id="step-5" class="step-container">
+                <div>
+                  <h2 class="step-header">STEP 5: BILLING ADDRESS</h2>
+                  <div class="line-break"></div>
+                </div>
+                <div class="address-options">
+                  <div>
+                    <input
+                      id="same-address"
+                      class="radio-custom"
+                      name="address-option"
+                      type="radio"
+                    />
+                    <label
+                      for="same-address"
+                      class="radio-custom-label option-label"
+                    >
+                      Same as shipping address</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      id="different-address"
+                      class="radio-custom"
+                      name="address-option"
+                      type="radio"
+                    />
+                    <label
+                      for="different-address"
+                      class="radio-custom-label option-label"
+                    >
+                      Use a different billing address</label
+                    >
+                  </div>
+                </div>
+                <div id="other-address" class="other-billing-address-option">
+                  <div class="d-flex">
+                    <div class="flex-1">
+                      <div>
+                        <input
+                          class="input-field"
+                          type="text"
+                          name="firstName"
+                          placeholder="First Name"
+                          data-valid="false"
+                          data-value=""
+                          spellcheck="false"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <div class="flex-1">
+                      <div>
+                        <input
+                          class="input-field"
+                          type="text"
+                          name="lastName"
+                          placeholder="Last Name"
+                          data-valid="false"
+                          data-value=""
+                          spellcheck="false"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <input
+                      class="input-field"
+                      type="text"
+                      name="addressLine1"
+                      placeholder="Street Address"
+                      data-valid="false"
+                      data-value=""
+                      spellcheck="false"
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <input
+                      class="input-field"
+                      type="text"
+                      name="addressLine2"
+                      placeholder="Apartment or Suite (Optional)"
+                      data-valid="false"
+                      data-value=""
+                      spellcheck="false"
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <input
+                      class="input-field"
+                      type="text"
+                      name="city"
+                      placeholder="City"
+                      data-valid="false"
+                      data-value=""
+                      spellcheck="false"
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <div class="pos-rel">
+                      <select
+                        type="text"
+                        name="country"
+                        placeholder="Country"
+                        data-value="PH"
+                      >
+                        <option value="">Country</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AQ">Antarctica</option>
+                        <option value="AG">Antigua and Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BQ">
+                          Bonaire, Sint Eustatius and Saba
+                        </option>
+                        <option value="BA">Bosnia and Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BV">Bouvet Island</option>
+                        <option value="BR">Brazil</option>
+                        <option value="IO">
+                          British Indian Ocean Territory
+                        </option>
+                        <option value="BN">Brunei Darussalam</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CX">Christmas Island</option>
+                        <option value="CC">Cocos (Keeling) Islands</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">
+                          Congo, Republic of the (Brazzaville)
+                        </option>
+                        <option value="CD">
+                          Congo, the Democratic Republic of the (Kinshasa)
+                        </option>
+                        <option value="CK">Cook Islands</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CW">Curaçao</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="CI">Côte d'Ivoire, Republic of</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FK">
+                          Falkland Islands (Islas Malvinas)
+                        </option>
+                        <option value="FO">Faroe Islands</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GF">French Guiana</option>
+                        <option value="PF">French Polynesia</option>
+                        <option value="TF">
+                          French Southern and Antarctic Lands
+                        </option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia, The</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GP">Guadeloupe</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GG">Guernsey</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HM">
+                          Heard Island and McDonald Islands
+                        </option>
+                        <option value="VA">Holy See (Vatican City)</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IR">Iran, Islamic Republic of</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IM">Isle of Man</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JE">Jersey</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KP">
+                          Korea, Democratic People's Republic of
+                        </option>
+                        <option value="KR">Korea, Republic of</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Laos</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macao</option>
+                        <option value="MK">Macedonia, Republic of</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="YT">Mayotte</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">
+                          Micronesia, Federated States of
+                        </option>
+                        <option value="MD">Moldova</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="NC">New Caledonia</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="NF">Norfolk Island</option>
+                        <option value="MP">Northern Mariana Islands</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PS">Palestine, State of</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PN">Pitcairn</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russian Federation</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="RE">Réunion</option>
+                        <option value="BL">Saint Barthélemy</option>
+                        <option value="SH">
+                          Saint Helena, Ascension and Tristan da Cunha
+                        </option>
+                        <option value="KN">Saint Kitts and Nevis</option>
+                        <option value="LC">Saint Lucia</option>
+                        <option value="MF">Saint Martin</option>
+                        <option value="PM">Saint Pierre and Miquelon</option>
+                        <option value="VC">
+                          Saint Vincent and the Grenadines
+                        </option>
+                        <option value="WS">Samoa</option>
+                        <option value="SM">San Marino</option>
+                        <option value="ST">Sao Tome and Principe</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SX">Sint Maarten (Dutch part)</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SB">Solomon Islands</option>
+                        <option value="SO">Somalia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="GS">
+                          South Georgia and South Sandwich Islands
+                        </option>
+                        <option value="SS">South Sudan</option>
+                        <option value="ES">Spain</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="SD">Sudan</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SZ">Swaziland</option>
+                        <option value="SE">Sweden</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="SY">Syrian Arab Republic</option>
+                        <option value="TW">Taiwan</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania, United Republic of</option>
+                        <option value="TH">Thailand</option>
+                        <option value="TL">Timor-Leste</option>
+                        <option value="TG">Togo</option>
+                        <option value="TK">Tokelau</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad and Tobago</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TR">Turkey</option>
+                        <option value="TM">Turkmenistan</option>
+                        <option value="TC">Turks and Caicos Islands</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="UM">
+                          United States Minor Outlying Islands
+                        </option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VE">
+                          Venezuela, Bolivarian Republic of
+                        </option>
+                        <option value="VN">Vietnam</option>
+                        <option value="VG">Virgin Islands, British</option>
+                        <option value="VI">Virgin Islands, U.S.</option>
+                        <option value="WF">Wallis and Futuna</option>
+                        <option value="EH">Western Sahara</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                        <option value="AX">Åland Islands</option>
+                      </select>
+                      <span class="isvg loaded"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 137.32 159.34"
+                        >
+                          <path
+                            d="M0 87.74h137.18c-.87 1.09-1.35 1.82-2 2.45Q104.15 123 73 155.84c-4.42 4.66-4.43 4.65-8.82 0L2.34 90.56C1.63 89.81 1 89 0 87.74zM137.32 72.1H.24a16.26 16.26 0 0 1 1.4-2.1Q34.27 35.51 66.88 1c1.64-1.74 2.47-1 3.73.3q27.71 29.34 55.46 58.6c3.09 3.26 6.19 6.53 9.26 9.8.55.58 1.02 1.22 1.99 2.4z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="flex-3 pos-rel">
+                      <select
+                        type="text"
+                        name="state"
+                        placeholder="State"
+                        data-value=""
+                      >
+                        <option value="">State</option>
+                        <option value="ABR">Abra</option>
+                        <option value="AGN">Agusan del Norte</option>
+                        <option value="AGS">Agusan del Sur</option>
+                        <option value="AKL">Aklan</option>
+                        <option value="ALB">Albay</option>
+                        <option value="ANT">Antique</option>
+                        <option value="APA">Apayao</option>
+                        <option value="AUR">Aurora</option>
+                        <option value="BAS">Basilan</option>
+                        <option value="BAN">Bataan</option>
+                        <option value="BTN">Batanes</option>
+                        <option value="BTG">Batangas</option>
+                        <option value="BEN">Benguet</option>
+                        <option value="BIL">Biliran</option>
+                        <option value="BOH">Bohol</option>
+                        <option value="BUK">Bukidnon</option>
+                        <option value="BUL">Bulacan</option>
+                        <option value="CAG">Cagayan</option>
+                        <option value="CAN">Camarines Norte</option>
+                        <option value="CAS">Camarines Sur</option>
+                        <option value="CAM">Camiguin</option>
+                        <option value="CAP">Capiz</option>
+                        <option value="CAT">Catanduanes</option>
+                        <option value="CAV">Cavite</option>
+                        <option value="CEB">Cebu</option>
+                        <option value="COM">Compostela</option>
+                        <option value="NCO">Cotabato</option>
+                        <option value="DVO">Davao Occidental</option>
+                        <option value="DAO">Davao Oriental</option>
+                        <option value="DAV">Davao del Norte</option>
+                        <option value="DAS">Davao del Sur</option>
+                        <option value="DIN">Dinagat Islands</option>
+                        <option value="EAS">Eastern Samar</option>
+                        <option value="GUI">Guimaras</option>
+                        <option value="IFU">Ifugao</option>
+                        <option value="ILN">Ilocos Norte</option>
+                        <option value="ILS">Ilocos Sur</option>
+                        <option value="ILI">Iloilo</option>
+                        <option value="ISA">Isabela</option>
+                        <option value="KAL">Kalinga</option>
+                        <option value="LUN">La Union</option>
+                        <option value="LAG">Laguna</option>
+                        <option value="LAN">Lanao del Norte</option>
+                        <option value="LAS">Lanao del Sur</option>
+                        <option value="LEY">Leyte</option>
+                        <option value="MAG">Maguindanao</option>
+                        <option value="MAS">Masbate</option>
+                        <option value="00">Metro Manila</option>
+                        <option value="MDC">Mindoro Occidental</option>
+                        <option value="MDR">Mindoro Oriental</option>
+                        <option value="MSC">Misamis Occidental</option>
+                        <option value="MSR">Misamis Oriental</option>
+                        <option value="MOU">Mountain Province</option>
+                        <option value="NEC">Negros Occidental</option>
+                        <option value="NER">Negros Oriental</option>
+                        <option value="NSA">Northern Samar</option>
+                        <option value="NUE">Nueva Ecija</option>
+                        <option value="NUV">Nueva Vizcaya</option>
+                        <option value="PLW">Palawan</option>
+                        <option value="PAM">Pampanga</option>
+                        <option value="PAN">Pangasinan</option>
+                        <option value="QUE">Quezon</option>
+                        <option value="QUI">Quirino</option>
+                        <option value="RIZ">Rizal</option>
+                        <option value="ROM">Romblon</option>
+                        <option value="WSA">Samar</option>
+                        <option value="SAR">Sarangani</option>
+                        <option value="SIG">Siquijor</option>
+                        <option value="SOR">Sorsogon</option>
+                        <option value="SLE">Southern Leyte</option>
+                        <option value="AUK">Sultan Kudarat</option>
+                        <option value="SLU">Sulu</option>
+                        <option value="SUN">Surigao del Norte</option>
+                        <option value="SUR">Surigao del Sur</option>
+                        <option value="TAR">Tarlac</option>
+                        <option value="TAW">Tawi-Tawi</option>
+                        <option value="ZMB">Zambales</option>
+                        <option value="ZSI">Zamboanga Sibugay</option>
+                        <option value="ZAN">Zamboanga del Norte</option>
+                        <option value="ZAS">Zamboanga del Sur</option>
+                      </select>
+                      <span class="isvg loaded"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 137.32 159.34"
+                        >
+                          <path
+                            d="M0 87.74h137.18c-.87 1.09-1.35 1.82-2 2.45Q104.15 123 73 155.84c-4.42 4.66-4.43 4.65-8.82 0L2.34 90.56C1.63 89.81 1 89 0 87.74zM137.32 72.1H.24a16.26 16.26 0 0 1 1.4-2.1Q34.27 35.51 66.88 1c1.64-1.74 2.47-1 3.73.3q27.71 29.34 55.46 58.6c3.09 3.26 6.19 6.53 9.26 9.8.55.58 1.02 1.22 1.99 2.4z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="flex-2 pos-rel">
+                      <input
+                        class="input-field"
+                        type="text"
+                        name="postalCode"
+                        placeholder="Zip Code"
+                        data-valid="false"
+                        data-value=""
+                        spellcheck="false"
+                        value=""
+                      />
+                      <span class="isvg loaded"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 137.32 159.34"
+                        >
+                          <path
+                            d="M0 87.74h137.18c-.87 1.09-1.35 1.82-2 2.45Q104.15 123 73 155.84c-4.42 4.66-4.43 4.65-8.82 0L2.34 90.56C1.63 89.81 1 89 0 87.74zM137.32 72.1H.24a16.26 16.26 0 0 1 1.4-2.1Q34.27 35.51 66.88 1c1.64-1.74 2.47-1 3.73.3q27.71 29.34 55.46 58.6c3.09 3.26 6.19 6.53 9.26 9.8.55.58 1.02 1.22 1.99 2.4z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="step-6" class="step-container">
+                <div>
+                  <h2 class="step-header">STEP 6: ORDER SUMMARY</h2>
+                  <div class="line-break"></div>
+                  <div class="choose-presell">
+                    <div class="money-sack">
+                      <span class="isvg loaded"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            class="shield-purse-top"
+                            d="M502 382.079a294.037 294.037 0 00-64.415-183.661l-63.078-78.863h-128.76l-63.078 78.863a294.036 294.036 0 00-64.415 183.66c0 66.204 53.669 119.873 119.873 119.873h144C448.331 501.953 502 448.283 502 382.079z"
+                          ></path>
+                          <path
+                            class="shield-purse-bottom"
+                            d="M374.317 119.556L406.96 55.48c9.754-19.146-11.428-39.223-30.025-28.458a21.568 21.568 0 01-24.411-1.931c-24.727-20.161-60.214-20.187-84.97-.062l-.076.062a21.57 21.57 0 01-24.411 1.931c-18.596-10.764-39.778 9.312-30.025 28.458l32.643 64.076h128.632z"
+                          ></path>
+                          <path
+                            class="shield-body"
+                            d="M120.434 176.286l110.434 50.799v83.09c-1.109 48.396-5.067 89.146-110.434 137.777C15.067 399.322 11.109 358.572 10 310.176v-83.09l110.434-50.8z"
+                          ></path>
+                          <path
+                            d="M341.069 199.022c1.86-1.859 2.931-4.439 2.931-7.069s-1.07-5.21-2.931-7.07c-1.859-1.86-4.439-2.93-7.069-2.93s-5.21 1.069-7.07 2.93-2.93 4.44-2.93 7.07 1.069 5.21 2.93 7.069c1.86 1.86 4.44 2.931 7.07 2.931s5.21-1.071 7.069-2.931zm-30.908 197.493c-14.332 0-25.992-10.167-25.992-22.664 0-5.522-4.478-10-10-10s-10 4.478-10 10c0 20.339 15.426 37.388 35.992 41.636v2.535c0 5.522 4.478 10 10 10s10-4.478 10-10v-2.536c20.565-4.248 35.991-21.297 35.991-41.636 0-23.525-20.632-42.665-45.991-42.665-14.332 0-25.992-10.167-25.992-22.664s11.66-22.665 25.992-22.665 25.991 10.168 25.991 22.665c0 5.522 4.478 10 10 10s10-4.478 10-10c0-20.339-15.426-37.389-35.991-41.637v-1.003c0-5.522-4.478-10-10-10s-10 4.478-10 10v1.003c-20.566 4.248-35.992 21.298-35.992 41.637 0 23.525 20.632 42.664 45.992 42.664 14.332 0 25.991 10.168 25.991 22.665s-11.659 22.665-25.991 22.665z"
+                          ></path>
+                          <path
+                            d="M445.395 192.172l-59.166-73.971 29.64-58.183c6.504-12.767 3.987-27.386-6.411-37.242-10.399-9.857-25.132-11.587-37.534-4.41-4.13 2.392-9.392 1.975-13.081-1.025-28.26-23.041-69.307-23.072-97.674-.01-3.703 3.011-8.964 3.427-13.094 1.034-12.401-7.177-27.134-5.447-37.533 4.411-10.398 9.856-12.915 24.476-6.411 37.242l29.739 58.376-34.461 43.084c-3.449 4.313-2.75 10.605 1.563 14.056 4.314 3.45 10.605 2.749 14.056-1.563l35.526-44.416H324v28.063c0 5.522 4.478 10 10 10s10-4.478 10-10v-28.063h15.25v99.896c0 5.522 4.478 10 10 10s10-4.478 10-10v-87.957l50.525 63.169C469.901 254.831 492 317.839 492 382.079c0 60.584-49.289 109.873-109.873 109.873h-144c-36.208 0-69.23-17.275-89.827-46.583 36.74-19.392 60.817-39.071 74.867-60.998 15.347-23.952 17.095-47.669 17.697-73.966a8.8 8.8 0 00.003-.229v-83.091a10 10 0 00-5.821-9.085l-110.434-50.8a9.991 9.991 0 00-8.357 0L5.821 218A10 10 0 000 227.085v83.091l.003.229c.603 26.297 2.351 50.014 17.697 73.966 16.871 26.33 48.184 49.419 98.543 72.661a10.003 10.003 0 008.38 0c1.907-.88 3.777-1.76 5.629-2.64 11.066 16.47 25.829 30.308 43.034 40.239 19.63 11.331 42.052 17.32 64.84 17.32h144c71.612 0 129.873-58.261 129.873-129.873.001-68.762-23.653-136.207-66.604-189.906zM224.301 37.292c1.472-1.396 6.819-5.631 13.754-1.617 11.27 6.523 25.627 5.389 35.806-2.887 20.974-17.048 51.397-17.026 72.355.063 10.104 8.212 24.461 9.348 35.729 2.825 6.939-4.02 12.283.22 13.755 1.616 1.472 1.395 5.99 6.501 2.35 13.648l-29.86 58.615H251.812l-29.86-58.615c-3.641-7.147.877-12.253 2.349-13.648zM120.434 436.917C21.931 390.446 20.987 353.144 20 310.063v-76.57l100.434-46.2 100.434 46.2v76.57c-.988 43.081-1.931 80.383-100.434 126.854z"
+                          ></path>
+                          <path
+                            d="M170.142 278.815l-56.039 56.039-23.723-23.723c-3.906-3.904-10.236-3.904-14.143 0-3.905 3.905-3.905 10.237 0 14.143l30.794 30.794c1.953 1.952 4.512 2.929 7.071 2.929s5.118-.977 7.071-2.929l63.11-63.11c3.905-3.905 3.905-10.237 0-14.143-3.905-3.904-10.235-3.904-14.141 0z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="presell-title">
+                      <div class="blue-check">
+                        <div class="moving-arrow">
+                          <span class="isvg loaded"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 348.73 348.73"
+                            >
+                              <path
+                                d="M201.98 297.18c-2.79 0-9.26-1.26-9.26-13V230.3H14.39c-.5.08-1.16.15-1.94.15-3.17 0-6.1-1.2-8.24-3.4C1.4 224.19 0 219.83 0 214.09v-82.82c0-11.45 8.12-14.48 12.42-14.48h176.54V67.41c0-13.8 6.57-15.87 10.5-15.87 6.28 0 12.53 5.98 13.72 7.18 4.3 3.17 117.85 88.78 130.33 101.25 4.53 4.53 5.33 9.1 5.2 12.12-.3 7.27-5.9 12.22-6.53 12.77l-126.3 104.52c-1.4 1.5-7.8 7.8-13.9 7.8z"
+                              ></path>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="check-container">
+                          <div class="check">
+                            <span class="isvg loaded"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 71.9 71.9"
+                              >
+                                <path
+                                  d="M69.9 8.1c-2.1-1.3-5-.8-6.3 1.3L33.7 53.9 7 36.9c-2.1-1.4-5-.7-6.3 1.3-1.3 2.1-.7 4.9 1.4 6.2l30.5 19.4 1.1.5.6.2a4.8 4.8 0 0 0 1.7 0l.1-.1a4.6 4.6 0 0 0 2-1l.2-.3.2-.1.2-.3.1-.2 32.3-48.1c1.4-2.1.9-4.9-1.2-6.3z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+                        <span> Yes, I want 2 Years of Protection. </span>
+                      </div>
+                    </div>
+                    <div class="presell-description">
+                      <p>
+                        <strong>One Time Offer:</strong> By placing your order
+                        today you can have 2 years of protection and replacement
+                        warranty for only an additional $19.97. This extended
+                        warranty means your product is covered for 2 years.
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <input
+                      class="input-field"
+                      type="text"
+                      name="couponCode"
+                      placeholder="Coupon Code"
+                      data-valid="false"
+                      data-value=""
+                      spellcheck="false"
+                      value=""
+                    />
+                  </div>
+                  <div class="submit-box">
+                    <div class="product-order-field wm">
+                      <div
+                        id="selected-product-name"
+                        class="product-name"
+                      ></div>
+                      <div class="product-price-details">
+                        <div
+                          id="selected-product-price"
+                          class="product-price"
+                        ></div>
+                      </div>
+                    </div>
+                    <div id="has_warranty" class="product-order-field">
+                      <div class="product-name">Sutera 2 Year Warranty</div>
+                      <div class="product-price-details">
+                        <div class="product-price">$19.00</div>
+                      </div>
+                    </div>
+                    <div class="product-order-field wm">
+                      <div class="product-name">Shipping</div>
+                      <div class="product-price-details">
+                        <div id="shipping-price" class="product-price"></div>
+                      </div>
+                    </div>
+                    <div class="product-total wm">
+                      <div class="total-field">
+                        <div>
+                          <div class="total-label">Total:</div>
+                          <span class="taxes">&nbsp;(Before Taxes)</span>
+                        </div>
+                        <div>
+                          <div
+                            id="ordered-total-price"
+                            class="total-price"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tos">
+                    <div class="presell-title">
+                      <div class="blue-check">
+                        <div class="moving-arrow">
+                          <span class="isvg loaded"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 348.73 348.73"
+                            >
+                              <path
+                                d="M201.98 297.18c-2.79 0-9.26-1.26-9.26-13V230.3H14.39c-.5.08-1.16.15-1.94.15-3.17 0-6.1-1.2-8.24-3.4C1.4 224.19 0 219.83 0 214.09v-82.82c0-11.45 8.12-14.48 12.42-14.48h176.54V67.41c0-13.8 6.57-15.87 10.5-15.87 6.28 0 12.53 5.98 13.72 7.18 4.3 3.17 117.85 88.78 130.33 101.25 4.53 4.53 5.33 9.1 5.2 12.12-.3 7.27-5.9 12.22-6.53 12.77l-126.3 104.52c-1.4 1.5-7.8 7.8-13.9 7.8z"
+                              ></path>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="check-container" style="margin-right: 20px">
+                          <div class="check">
+                            <span class="isvg loaded"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 71.9 71.9"
+                              >
+                                <path
+                                  d="M69.9 8.1c-2.1-1.3-5-.8-6.3 1.3L33.7 53.9 7 36.9c-2.1-1.4-5-.7-6.3 1.3-1.3 2.1-.7 4.9 1.4 6.2l30.5 19.4 1.1.5.6.2a4.8 4.8 0 0 0 1.7 0l.1-.1a4.6 4.6 0 0 0 2-1l.2-.3.2-.1.2-.3.1-.2 32.3-48.1c1.4-2.1.9-4.9-1.2-6.3z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+                        <div>
+                          <p>
+                            I agree to the website's
+                            <a
+                              href="https://sleepdreamdeep.com/policies/terms-of-service"
+                              class="link"
+                              target="_blank"
+                              >Terms of Use</a
+                            >
+                            and
+                            <a
+                              href="https://sleepdreamdeep.com/policies/privacy-policy"
+                              class="link"
+                              target="_blank"
+                              >Privacy Policy</a
+                            >.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="submit-error">
+                    Unfortunately, your order was declined. Please try again
+                  </div>
+                  <button type="submit" class="submit-cc">
+                    YES! Send me my Sutera™!
+                  </button>
+                  <button type="submit" class="paypal-submit">
+                    CHECKOUT WITH
+                    <img
+                      class="paypal-img"
+                      src="https://d3hlrrbqydii6y.cloudfront.net/img/2ac5a4cd0328e0a41695b02464afa541.png"
+                    />
+                  </button>
+                  <div class="payment-footer">
+                    <picture>
+                      <img class="payment-footer-img" />
+                    </picture>
+                    <div class="ssl-description">
+                      <div class="yellow-lock-svg">
+                        <span class="isvg loaded"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 402 402"
+                          >
+                            <path
+                              d="M357.45 190.721c-5.331-5.33-11.8-7.993-19.417-7.993h-9.131v-54.821c0-35.022-12.559-65.093-37.685-90.218C266.093 12.563 236.025 0 200.998 0c-35.026 0-65.1 12.563-90.222 37.688-25.126 25.126-37.685 55.196-37.685 90.219v54.821h-9.135c-7.611 0-14.084 2.663-19.414 7.993-5.33 5.326-7.994 11.799-7.994 19.417V374.59c0 7.611 2.665 14.086 7.994 19.417 5.33 5.325 11.803 7.991 19.414 7.991H338.04c7.617 0 14.085-2.663 19.417-7.991 5.325-5.331 7.994-11.806 7.994-19.417V210.135c.004-7.612-2.669-14.084-8.001-19.414zm-83.363-7.993H127.909v-54.821c0-20.175 7.139-37.402 21.414-51.675 14.277-14.275 31.501-21.411 51.678-21.411 20.179 0 37.399 7.135 51.677 21.411 14.271 14.272 21.409 31.5 21.409 51.675v54.821z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                      Secure 256-bit SSL encryption
+                    </div>
+                    <div class="footer-guarantee">
+                      <picture>
+                        <img class="guarantee-img" />
+                      </picture>
+                      <div class="guarantee-description">
+                        <p>
+                          We have a 30 day satisfaction guarantee, we want our
+                          customers happy! Please refer to our return policy at
+                          the bottom of the page for more details. Happy
+                          Shopping!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="faq-section">
+        <div class="container">
+          <h2 class="faq-header">FREQUENTLY ASKED QUESTIONS</h2>
+          <div class="faq-line">
+            <div class="faq-line-header">
+              <p>What makes Sutera any better than my current pillow?</p>
+            </div>
+            <div class="faq-line-description">
+              <p>
+                Sutera™ uses high density memory foam to contour to your necks
+                natural shape giving you complete support. The perfect amount of
+                neck support helps alleviate neck pains &amp; aches, give you
+                more energy throughout the day &amp; get you a full nights rest
+              </p>
+            </div>
+          </div>
+          <div class="faq-line">
+            <div class="faq-line-header">
+              <p>What makes Sutera any better than my current pillow?</p>
+            </div>
+            <div class="faq-line-description">
+              <p>
+                Sutera™ uses high density memory foam to contour to your necks
+                natural shape giving you complete support. The perfect amount of
+                neck support helps alleviate neck pains &amp; aches, give you
+                more energy throughout the day &amp; get you a full nights rest
+              </p>
+            </div>
+          </div>
+          <div class="faq-line">
+            <div class="faq-line-header">
+              <p>Where does Sutera Ship From?</p>
+            </div>
+            <div class="faq-line-description">
+              <p>
+                Sutera ships directly from our warehouse in the United States!
+                Our usual shipping time is 3-8 days.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-links">
+        <a
+          href="https://sleepdreamdeep.com/policies/terms-of-service"
+          target="_blank"
+          class="terms-cond"
+          >Terms &amp; Conditions</a
+        >
+        |
+        <a
+          href="https://sleepdreamdeep.com/policies/privacy-policy"
+          target="_blank"
+          class="terms-cond"
+          >Privacy Policy / CCPA</a
+        >
+        |
+        <a
+          href="https://sleepdreamdeep.com/policies/refund-policy"
+          target="_blank"
+          class="terms-cond"
+          >Returns</a
+        >
+        |
+      </div>
+      <div class="reminder">
+        <p>
+          By filling out the field, you consent for Sutera to use automated
+          technology, including texts and prerecorded messages, to contact you
+          at the number and email provided about Sutera offers.
+        </p>
+      </div>
+      <a
+        href="https://www.dmca.com/Protection/Status.aspx?ID="
+        title="DMCA.com Protection Status"
+        class="dmca-badge"
+        target="_blank"
+        rel="noopener"
+        ><img
+          src="https://images.dmca.com/Badges/dmca_protected_sml_120ac.png?ID="
+          alt="DMCA.com Protection Status"
+      /></a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
